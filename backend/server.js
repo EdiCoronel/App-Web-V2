@@ -9,5 +9,5 @@ app.get('/api/ley', (req, res) => {
   res.json(leyData);
 });
 
-// Exporta la app para que Vercel pueda usarla
-module.exports = app;
+const PORT = 5000;
+app.listen(PORT, () => console.log(`Servidor corriendo en http://localhost:${PORT}`));
